@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Pastry - Landing Pages</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        html::-webkit-scrollbar {
+            display: none;
+        }
+
+        #eiffelTowerImg {
+            object-position: center 70%;
+            transition: object-position 1.4s ease-out;
+        } 
+
+        section div:nth-child(3) div::-webkit-scrollbar {
+            display: none;
+        }
+
+        #bakingImg {
+            margin-left: 384px;
+            transition: 1.4s ease-out;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="w-full h-fit">
+        <nav class="fixed w-full h-20 px-20 py-5 flex gap-20 items-center bg-white z-10">
+            <p class="text-2xl font-bold" style="font-family: 'Playwrite CU', sans-serif;">Delicious Pastry</p>
+    
+            <ul>
+                <li class="inline-block px-5 capitalize"><a href="#featureContainer">feature</a></li>
+                <li class="inline-block px-5 capitalize"><a href="#pricing">pricing</a></li>
+                <li class="inline-block px-5 capitalize"><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    
+    
+        <section class="w-full h-fit">
+            <div class="w-full h-screen px-20 flex items-center justify-between">
+                <div>
+                    <p class="text-9xl font-bold uppercase w-1/2">luscious savory sweet</p>
+                </div>
+
+                <div class="relative h-96 rounded">
+                    <img class="w-full h-full object-cover object-center rounded transition-transform" src="images/pexels-eric-mufasa-578798-1397292.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="w-full h-fit pb-20 px-20">
+                <p class="w-96 text-justify">In 2024, the world of pastry was revolutionized by <span class="italic">Delicous Pastry</span>, a brand that captured the essence of indulgence in every bite. Founded in the heart of Paris, <span class="italic">Delicous Pastry</span> quickly gained international acclaim for its exquisite blend of traditional French baking techniques with a futuristic twist. Their signature pastries, from the velvety croissants infused with edible gold flakes to the éclairs filled with rich, unexpected flavors like lavender honey and caramelized fig, became the talk of the culinary world. Each pastry was a work of art, handcrafted with precision and care, reflecting the brand's commitment to luxury and innovation.</p>
+            </div>
+
+            <div id="featureContainer" class="w-full h-fit pb-20">
+                <div class="w-full h-60 relative px-20 overflow-y-scroll">
+                    <div class="w-full h-full flex items-center justify-center bg-cover bg-fixed rounded bg-[url('images/pexels-isaw-company-66472-1005406.jpg')]">
+                        <p class="text-white text-7xl font-bold capitalize">desserts</p>
+                    </div>
+    
+                    <div class="w-full h-full flex items-center justify-center bg-cover bg-fixed rounded bg-[url('images/pexels-leigh-patrick-14477-298217.jpg')]">
+                        <p class="text-white text-7xl font-bold capitalize">cookies</p>
+                    </div>
+    
+                    <div class="w-full h-full flex items-center justify-center bg-cover bg-fixed rounded bg-[url('images/pexels-pixabay-461060.jpg')]">
+                        <p class="text-white text-7xl font-bold capitalize">breads</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-fit py-20 px-20">
+                <div class="w-full flex">
+                    <div class="w-96 pr-14">
+                        <p class="text-justify">At <span class="italic">Delicious Pastry</span>, every creation is crafted with passion and precision. From the very first knead of dough to the final glaze, our pastry chefs pour their hearts into delivering perfection. We are committed to using only the finest ingredients, meticulously sourced from the best producers around the world.</p>
+                    </div>
+
+                    <div class="w-96 h-96 relative">
+                        <img id="bakingImg" class="w-full h-full object-center object-cover transition-transform" src="images/pexels-shvetsa-5964577.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-fit">
+                <div id="ingredientsContainer" class="w-full px-20 flex gap-x-14 opacity-0">
+                    <div class="w-56 h-56 overflow-hidden opacity-0 transition-opacity">
+                        <img class="w-full h-full object-cover hover:scale-125 transition-transform ease-out rounded" src="images/pexels-julia-kuzenkov-442028-1974627.jpg" alt="">
+                    </div>
+
+                    <div class="w-56 h-56 overflow-hidden opacity-0 transition-opacity">
+                        <img class="w-full h-full object-cover hover:scale-125 transition-transform ease-out rounded" src="images/pexels-roman-odintsov-5947519.jpg" alt="">
+                    </div>
+
+                    <div class="w-56 h-56 overflow-hidden opacity-0 transition-opacity">
+                        <img class="w-full h-full object-cover hover:scale-125 transition-transform ease-out rounded" src="images/pexels-hannah-grapp-108389242-9737802.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-screen flex items-center px-20 gap-x-20">
+                <div class="w-80 h-96">
+                    <img id="storeImg" class="w-full h-full object-cover rounded" src="images/pexels-aiseleer-566178897-17156248.jpg" alt="">
+                </div>
+
+                <div>
+                    <p class="w-64 text-justify">This is our store, <span class="italic">Delicious Pastry</span>, where you'll find a wide selection of freshly baked goods, from mouthwatering pastries to exquisite cakes and handcrafted breads. We're passionate about providing the highest quality treats to satisfy your cravings.</p>
+
+                    <ul class="mt-5">
+                        <li class="py-1">Monday to Friday: 8:00 AM - 6:00 PM</li>
+                        <li class="py-1">Saturday: 9:00 AM - 5:00 PM</li>
+                        <li class="py-1">Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full flex justify-center py-20">
+                <div class="w-4/5 h-60 rounded relative">
+                    <img id="eiffelTowerImg" class="w-full h-full object-cover rounded" src="images/pexels-maxavans-5101755.jpg" alt="">
+                    <p class="text-2xl text-center py-5">Located in Paris</p>
+                </div>
+            </div>
+
+            <div class="w-full flex px-20">
+                <div class="w-96 h-96">
+                    <iframe class="w-full h-full rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999026720826!2d2.292292615674161!3d48.85884417928733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fefcdb68297%3A0x8d1eebc42a35d0b9!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1632846610145!5m2!1sen!2sfr" 
+                    allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+           
+            <div id="pricing" class="w-full h-screen px-20 py-20 flex flex-wrap justify-center gap-10">
+                <div class="w-72 h-82 shadow-xl rounded p-4">
+                    <img class="w-full h-5/6 object-cover rounded" src="images/pexels-kpaukshtite-1998633.jpg" alt="">
+                    <p class="text-2xl py-3" style="font-family: 'Playwrite CU';">Chocolate cake</p>
+                    <p class="" style="font-family: 'Playwrite CU';">$0.30</p>
+                </div>
+
+                <div class="w-72 h-82 shadow-xl rounded p-4">
+                    <img class="w-full h-5/6 object-cover rounded" src="images/pexels-catscoming-1118332.jpg" alt="">
+                    <p class="text-2xl py-3" style="font-family: 'Playwrite CU';">Basket of breads</p>
+                    <p class="" style="font-family: 'Playwrite CU';">$0.30</p>
+                </div>
+    
+                <div class="w-72 h-82 shadow-xl rounded p-4">
+                    <img class="w-full h-5/6 object-cover rounded" src="images/pexels-pixabay-267308.jpg" alt="">
+                    <p class="text-2xl py-3" style="font-family: 'Playwrite CU';">Cinnamon</p>
+                    <p class="" style="font-family: 'Playwrite CU';">$0.30</p>
+                </div>
+            </div>
+
+            <div id="contact" class="w-full h-screen flex justify-center items-center">
+                <div class="text-center">
+                    <p class="text-8xl font-bold mb-20" style="font-family: 'Playwrite CU', sans-serif;">Feel free to reach out!</p>
+                    <a class="py-3 px-5 border border-black" href="mailto:hadzikmochammad@gmail.com">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="w-full py-3 px-20 border border-black">
+                <div class="">
+                    <p class="text-center">This landing page was created as part of my portfolio to showcase my skills and expertise in web development. It highlights the projects I've worked on and serves as a gallery of my freelance work. Whether you're here to explore my previous projects or to get a sense of what I can create, feel free to reach out for collaboration or inquiries. Thank you for visiting!</p>
+                </div>
+
+                <div class="flex justify-center py-10">
+                    <p class="font-bold text-2xl mx-1">find me:</p>
+                    <ul>
+                        <li class="inline-block mx-2"><a href="https://www.upwork.com/freelancers/~010e6a94f70bd0497b" target="_blank"><div class="w-12 h-12"><img class="w-full h-full object-cover" src="images/upwork.png" alt="upwork"></div></a></li>
+                        <li class="inline-block mx-2"><a href="https://fiverr.com/dzixxx" target="_blank"><div class="w-12 h-12"><img class="w-full h-full object-cover" src="images/fiverr.png" alt="fiverr"></div></a></li>
+                        <li class="inline-block mx-2"><a href="https://github.com/hadzikk" target="_blank"><div class="w-12 h-12"><img class="w-full h-full object-cover" src="images/github.png" alt="github"></div></a></li>
+                    </ul>
+                </div>
+
+                <div class="flex justify-center">
+                    <p>&copy;Copyright Hadzik Mochamad Sofyan 2024</p>
+                </div>
+            </div>
+        </section>
+    </div>    
+
+    <script src="script/script.js"></script>
+</body>
+</html>
